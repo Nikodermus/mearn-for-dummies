@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node server",
-    "server": "nodemon server"
+    "start": "node main",
+    "server": "nodemon main"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -18,6 +18,10 @@
     "request": "^2.88.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
     "concurrently": "^4.1.0",
     "nodemon": "^1.19.1"
   }
