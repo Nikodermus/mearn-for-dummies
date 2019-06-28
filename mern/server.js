@@ -5,7 +5,6 @@ import authRoute from "./routes/api/auth";
 import postsRoute from "./routes/api/posts";
 import profilesRoute from "./routes/api/profiles";
 import usersRoute from "./routes/api/users";
-import { check, validationResult } from "express-validator/check";
 
 const app = express();
 
@@ -21,7 +20,6 @@ app.use("/api/posts", postsRoute);
 app.use("/api/profiles", profilesRoute);
 
 const PORT = process.env.PORT || 9000;
-console.error(PORT);
 
 app.listen(PORT, () => {
   console.log(`Serving on ${PORT}`);
